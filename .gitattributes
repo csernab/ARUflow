@@ -1,5 +1,3 @@
-databases/* linguist-vendored
-Trimmomatic-0.39/* linguist-vendored
-*.smk linguist-language=Python
-envs/* linguist-documentation
-config.yaml linguist-documentation
+* linguist-vendored
+*.yaml linguist-vendored=false
+*.js linguist-vendored=false
