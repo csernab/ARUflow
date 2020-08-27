@@ -1,0 +1,3 @@
+databases/* linguist-vendored
+Trimmomatic-0.39/* linguist-vendored
+*.smk linguist-language=Python
