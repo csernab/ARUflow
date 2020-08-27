@@ -1,0 +1,28 @@
+ARIBA run with this command:
+/home/carlsern/anaconda3/envs/ariba/bin/ariba prepareref prepareref -f out.plasmidfinder.fa -m out.plasmidfinder.tsv plasmidfinder_prepareref
+from this directory: /mnt/lustre/home/carlsern/databases/plasmidfinder_db
+
+ARIBA version: 2.14.4
+
+External dependencies:
+bowtie2	2.3.5.1	/home/carlsern/anaconda3/envs/ariba/bin/bowtie2
+cdhit	4.8.1	/home/carlsern/anaconda3/envs/ariba/bin/cd-hit-est
+nucmer	3.1	/home/carlsern/anaconda3/envs/ariba/bin/nucmer
+
+External dependencies OK: True
+
+Python version:
+3.6.10 |Anaconda, Inc.| (default, May  8 2020, 02:54:21) 
+[GCC 7.3.0]
+
+Python packages:
+ariba	2.14.4	/home/carlsern/anaconda3/envs/ariba/lib/python3.6/site-packages/ariba/__init__.py
+bs4	4.9.1	/home/carlsern/anaconda3/envs/ariba/lib/python3.6/site-packages/bs4/__init__.py
+dendropy	4.4.0	/home/carlsern/anaconda3/envs/ariba/lib/python3.6/site-packages/dendropy/__init__.py
+pyfastaq	3.17.0	/home/carlsern/anaconda3/envs/ariba/lib/python3.6/site-packages/pyfastaq/__init__.py
+pymummer	0.10.3	/home/carlsern/anaconda3/envs/ariba/lib/python3.6/site-packages/pymummer/__init__.py
+pysam	0.15.3	/home/carlsern/anaconda3/envs/ariba/lib/python3.6/site-packages/pysam/__init__.py
+
+Python packages OK: True
+
+Everything looks OK: True

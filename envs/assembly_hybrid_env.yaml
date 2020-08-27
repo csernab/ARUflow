@@ -1,0 +1,8 @@
+channels:
+    - conda-forge
+    - bioconda
+    - defaults  
+dependencies:
+    - unicycler=0.4.8
+    - quast=5.0.2
+ 

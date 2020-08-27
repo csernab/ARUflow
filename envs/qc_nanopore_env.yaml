@@ -1,0 +1,7 @@
+channels:
+    - conda-forge
+    - bioconda
+    - defaults  
+dependencies:
+    - filtlong=0.2.0
+    - nanoqc=0.8.1

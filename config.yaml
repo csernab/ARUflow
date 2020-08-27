@@ -1,0 +1,58 @@
+# Please check the parameters and adjust them to your needs
+
+# Project name: both output files and results will be saved in a folder with the project name
+project: extensive_hybrid_ghana_test
+project_dir: /home/carlsern/TFM_bbc/snakemake_test
+
+# =================== Input files =================== #
+
+# Short paired-end reads (.fastq.gz)
+short_raw_data: short_reads/hybrid_ghana_test
+
+# Long reads (.fastq.gz)
+long_raw_data: long_reads
+
+# =================== Databases / Tools location =================== #
+
+# ...... Trimmomatic ...... #
+path_trimmomatic: Trimmomatic-0.39
+path_adapters: Trimmomatic-0.39/adapters
+
+# Prepared reference data input:
+resfinder_db: databases/resfinder_db/resfinder_prepareref/
+plasmidfinder_db: databases/plasmidfinder_db/plasmidfinder_prepareref/
+
+
+# =================== Parameters =================== #
+
+# ...... FastQC parameters ...... #
+
+params_fastqc:
+ threads: 12
+
+
+# ...... Trimmomatic parameters ...... # Short reads preprocessing
+params:
+ adapters: "NexteraPE-PE.fa"
+ leading: 3
+ trailing: 3
+ window: "4:20"
+ minlen: 36
+ threads: 12
+
+# ...... Filtlong parameters ...... # Long reads preprocessing
+params_filtlong:
+ min_length: 1000 #Discard any read which is shorter than 1 kbp.
+ keep_percent: 90 #Throw out the worst 10% of reads.
+ target_bases: 500000000 #Remove the worst reads until only 500 Mbp remain
+
+
+# ...... Abricate parameters ...... # For extensive analysis (short reads)
+abricate_params:
+ minid: 75
+ mincov: 75
+
+# ...... Abricate parameters ...... # For extensive analysis (hybrid)
+abricate_params_hybrid:
+ minid: 75
+ mincov: 75

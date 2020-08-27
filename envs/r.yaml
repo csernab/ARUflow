@@ -1,0 +1,13 @@
+name: rEnv
+channels:
+  - conda-forge
+  - r
+dependencies:
+  - r-base=3.6
+  - r-tidyr
+  - r-dplyr
+  - r-reshape
+  - r-reshape2
+  - r-ggplot2
+  - r-gridextra
+  - r-circlize
